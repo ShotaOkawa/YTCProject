@@ -22,4 +22,4 @@ if __name__ == '__main__':
         ytc_batch_model.ins_video_data(videos_data)
         ytc_batch_model.ins_comment_data(videos_comment_data)
     else:
-        print('no data')
+        logger.warning('分析するデータがありません')
