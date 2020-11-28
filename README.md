@@ -1,4 +1,5 @@
 # YTCProject
+## BATCH
 【configフォルダ配下に下記をセット】</br>
   1.「APIKey.ini」を配置し、下記を記載する </br>
     [API]</br>
