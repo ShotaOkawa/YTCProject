@@ -21,7 +21,6 @@ class VideolistupController extends Controller
         //analysis_videoからデータを取得
         $md = new Analysis_video();
         $data = $md->getData();
-        //URLを作成する
         
         //Viewに値を返す
         return view('videolistup.index',["videos"=>$data]);
@@ -29,13 +28,10 @@ class VideolistupController extends Controller
 
     public function videoiddel (Request $request) 
     {
-        //分析動画IDを削除する
         $md = new Analysis_video();
-        $md->where('video_id', $request->video_id)->delete();
-        $data = $md->getData();
-        
-        //Viewに値を返す
-        return view('videolistup.index',["videos"=>$data]);
+        $data = $md->videoiddel( $request->video_id);
+
+        return redirect('/videolistup');
     }
 
 

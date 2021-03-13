@@ -23,4 +23,8 @@ class Analysis_video extends Model
         'create_date' => $create_date
     ]);
     }
+    public function videoiddel($video_id)
+    {
+      DB::table('analysis_video')->where('video_id', $video_id)->delete();
+    }
 }
