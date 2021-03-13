@@ -18,30 +18,30 @@ SQLはテーブルに合わせて変更する。
 
 ## 画面
 【概要】
-2021/3/13現在
-ある程度の機能は動くがエラーハンドリングや共通化等ができていないため未完成。
-※ログイン画面はFW標準のものは使用していないかつ登録画面が未完成。
-PHPとLaravelを使用してWebアプリケーションを作成。
-APIKeyはバッチ同様、自身で取得する必要がある。
+2021/3/13現在</br>
+ある程度の機能は動くがエラーハンドリングや共通化等ができていないため未完成。</br>
+※ログイン画面はFW標準のものは使用していないかつ登録画面が未完成。</br>
+PHPとLaravelを使用してWebアプリケーションを作成。</br>
+APIKeyはバッチ同様、自身で取得する必要がある。</br>
+</br>
+【開発環境】</br>
+PHP Ver：7.2.34</br>
+Laravel Ver：5.7.29</br>
+Xampp</br>
+Windows 10 Pro x64</br>
 
-【開発環境】
-PHP Ver：7.2.34
-Laravel Ver：5.7.29
-Xampp
-Windows 10 Pro x64
-
-【構築手順】
-1.下記からXAMPPをインストール
-　https://www.apachefriends.org/download.html
-2.composerをインストール
-　https://getcomposer.org/download/
-3.YouTube Data API v3のAPIKEYを取得
-　参考：http://piyohiko.webcrow.jp/kids_tube/help/index.html
-4.xampp/htdocs/直下に当プロジェクトを配置
-　※composerからprojectをcreateして、上書きするでも大丈夫です。
-5.VideolistupController.phpにAPIKEYをセット
-6.MySQLにYTCDBをインポートする。
-　.envにMYSQLへのアクセス定義があるが、自身で変えてしまってもOK
-7.サーバ起動コマンドを入力する。
-　php artisan serve
-8.https://ドメイン名/login/にアクセスする
+【構築手順】</br>
+1.下記からXAMPPをインストール</br>
+　https://www.apachefriends.org/download.html</br>
+2.composerをインストール</br>
+　https://getcomposer.org/download/</br>
+3.YouTube Data API v3のAPIKEYを取得</br>
+　参考：http://piyohiko.webcrow.jp/kids_tube/help/index.html</br>
+4.xampp/htdocs/直下に当プロジェクトを配置</br>
+　※composerからprojectをcreateして、上書きするでも大丈夫です。</br>
+5.VideolistupController.phpにAPIKEYをセット</br>
+6.MySQLにYTCDBをインポートする。</br>
+　.envにMYSQLへのアクセス定義があるが、自身で変えてしまってもOK</br>
+7.サーバ起動コマンドを入力する。</br>
+　php artisan serve</br>
+8.https://ドメイン名/login/にアクセスする</br>
