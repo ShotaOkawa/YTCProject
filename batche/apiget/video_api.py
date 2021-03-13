@@ -29,7 +29,7 @@ stat_url = base_url + '/videos?key=%s&id=%s&part=%s'
 
 def get_video_data(analysis_video_ids):
     video_data = []
-    daily_flg = 1
+    daily_flg = '1'
     for video_id in analysis_video_ids:
         ins_data = []
         # APIから動画ID・動画タイトルを取得
@@ -54,7 +54,7 @@ def get_video_data(analysis_video_ids):
         response = requests.get(stat_url % (API_KEY, video_id, part))
         if response.status_code != 200:
             logger.error('YouTubeとの接続に失敗しました。処理を停止します。')
-            os.sysexit()
+            continue
 
         result = response.json()
         view_cnt = '0'

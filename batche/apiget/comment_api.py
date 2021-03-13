@@ -39,7 +39,7 @@ def get_video_comment_data(video_data, n=10):
 
         if response.status_code != 200:
             logger.error('YouTubeとの接続に失敗しました。処理を停止します。')
-            os.sysexit()
+            continue
 
         result = response.json()
         if not result['items']:
